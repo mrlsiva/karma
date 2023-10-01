@@ -117,5 +117,34 @@ $(document).ready(function () {
 	if( $('.scroll-container .leftSidebar').length ){ 
 		$('.scroll-container .leftSidebar').theiaStickySidebar();
 	}
-	
+ 
+	var accord = $(".faq-accord");
+    	if(accord.length){
+    	  var i = 0; 
+    	  accord.each(function(){
+           var all_panels = $(this).find('.faq-ans').hide();  
+          
+    		var all_titles = $(this).find('.faq-ques'); 
+    		
+    		$(this).find('.faq-ans.active').slideDown();    	
+    		
+          all_titles.on("click", function() { 
+            
+            var acc_title = $(this);
+            var acc_parent = $(this).parents('.faq-container');
+            var acc_ans = acc_title.next(); 
+            
+              if (!acc_ans.hasClass('active')) {
+                    acc_parent.find('.faq-ques').removeClass('active');  
+                    acc_parent.find('.faq-ans').removeClass('active').slideUp();
+                    
+                    acc_title.addClass('active');  
+                    acc_ans.addClass('active').slideDown(); 
+                  } else {
+                     all_panels.removeClass('active').slideUp();
+                     all_titles.removeClass('active'); 
+                  } 
+          });
+    	  });        
+    	}
 });

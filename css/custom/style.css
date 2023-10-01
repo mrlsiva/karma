@@ -19,7 +19,13 @@
 	9.CRAFTING DESIGN
 	10.TESTIMONIAL
 	11.FOOTER 
-	12.MEDIA QUERIES
+	12.ABOUT
+	13.CONTACT PROJECTS
+	14.CONTACT CAREER
+	15.SERVICES
+	16.PROCESS
+	17.CONTACT US 
+	18.MEDIA QUERIES
 	
 	
  ======================================================================================================================*/
@@ -52,9 +58,12 @@ body {
 	font-weight: 400;
 	line-height: 25px;
 	margin: 0 auto;
-	max-width: 1500px;
+	max-width: 100%;
 }
 
+body .container-fluid {
+	max-width: 1920px;
+}
 p {
 	margin-bottom: 0px;
 	color: #333333;
@@ -332,6 +341,35 @@ h6 {
 	-webkit-transition: all 0.3s ease-in;
 }
 
+.transparent-btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: #EF5152;
+	padding: 15px 20px;
+	transition: all 0.3s ease-in;
+	letter-spacing: 1px;
+	border: 2px solid #EF5152;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: 'Sora';
+	fill: #ffffff;
+	border-radius: 46px;
+	min-width: 180px;
+	margin-top: 30px;
+}
+
+
+.transparent-btn:hover {
+	background-color: #EF5152;
+	color: #ffffff;
+	fill: #333333;
+	border: 2px solid #EF5152;
+	transition: all 0.3s ease-in;
+	-webkit-transition: all 0.3s ease-in;
+}
+
 .primary-btn svg {
 	margin-left: 10px;
 	margin-top: -2px;
@@ -386,8 +424,8 @@ h6 {
 	margin-left: auto;
 	border-radius: 50px;
 	width: 45px;
-  height: 45px;
-  padding: 0;
+	height: 45px;
+	padding: 0;
 }
 
 button:focus:not(:focus-visible) {
@@ -571,14 +609,16 @@ button:focus:not(:focus-visible) {
 
 .exp-head {
 	display: table;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding-bottom: 20px;
 	position: relative;
+	border-bottom: 1px solid #cccccc;
 }
 
 .exp-head h5 {
 	width: 100%;
 }
+
 .exp-head::after {
 	content: "";
 	border-bottom: 5px solid #151515;
@@ -592,34 +632,40 @@ button:focus:not(:focus-visible) {
 	transition: all .3s;
 	width: 0;
 }
+
 .exp-com:hover .exp-head::after {
 	opacity: 1;
 	transition: all .3s;
 	width: 100%;
 }
+
 .exp-head-img {
 	display: flex;
 	align-items: flex-start;
 	position: relative;
 }
+
 .exp-arrow {
 	position: absolute;
-  right: 0;
+	right: 0;
 }
+
 .arrow-bottom {
 	position: absolute;
-  top: 20px;
-  right: 20px;
-  opacity: 0;
+	top: 20px;
+	right: 20px;
+	opacity: 0;
 	transition: all .3s;
 }
+
 .exp-com:hover .arrow-bottom {
 	position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 1;
+	top: 0;
+	right: 0;
+	opacity: 1;
 	transition: all .3s;
 }
+
 .arrow-top {
 	opacity: 1;
 	position: absolute;
@@ -627,21 +673,25 @@ button:focus:not(:focus-visible) {
 	right: 0;
 	transition: all .3s;
 }
+
 .exp-com:hover .arrow-top {
 	opacity: 0;
 	position: absolute;
-  top: -20px;
+	top: -20px;
 	transition: all .3s;
-  right: -20px;
+	right: -20px;
 }
+
 /*======================================== 8.SERVICES END ============================*/
 /*======================================== 9.CRAFTING DESIGN START ============================*/
 .craft-com {
 	padding: 30px;
 }
+
 .client-section-padding-bottom {
 	padding-bottom: 50px;
 }
+
 /*======================================== 9.CRAFTING DESIGN END ============================*/
 /*======================================== 10.TESTIMONIAL START ============================*/
 #testimonial-slider.owl-theme .owl-controls .owl-buttons {
@@ -682,12 +732,13 @@ button:focus:not(:focus-visible) {
 
 /*======================================== 10.TESTIMONIAL END ============================*/
 /*======================================== 11.FOOTER START ============================*/
- 
-
-.pl-4 {
-	padding-left: 80px;
+.footer .col-lg-6:first-child {
+	display: flex;
+	justify-content: center;
 }
-
+.footer > .row {
+	align-items: center;
+}
 .social-icons li {
 	display: inline-block;
 	border: 1px solid #cccccc;
@@ -699,113 +750,133 @@ button:focus:not(:focus-visible) {
 .social-grp {
 	padding-bottom: 50px;
 }
+
 .footer-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  margin: -60px 0 0 -60px;
-  -webkit-animation: spin 6s linear infinite;
-  -moz-animation: spin 6s linear infinite;
-  animation: spin 6s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin: -60px 0 0 -60px;
+	-webkit-animation: spin 6s linear infinite;
+	-moz-animation: spin 6s linear infinite;
+	animation: spin 6s linear infinite;
 }
+
 @-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
+	100% {
+		-moz-transform: rotate(360deg);
+	}
 }
+
 @-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
 }
+
 @keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
 
 /*======================================== 11.FOOTER END ============================*/
 /*===================== 12.ABOUT AREA START =====================*/
+.about-header {
+	background: url("../../images/about/header.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-bottom: 80px;
+}
 .mob-img {
 	display: none;
 }
+
 .about-sec-com .about-sec2:first-child {
 	padding-bottom: 80px;
 }
- .karma-font {
-	 color: #FFF;
-font-family: Sora;
-font-size: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: 90px; /* 87.5% */
-letter-spacing: -3.2px;
- }
- 
- .karma-4col .num {
-	 color: #F6F6F6;
-  font-family: 'Sora';
-  font-size: 55px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -1.628px;
- }
-.karma-4col .karma-text { 
+
+.karma-font {
+	color: #FFF;
+	font-family: Sora;
+	font-size: 80px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 90px;
+	/* 87.5% */
+	letter-spacing: -3.2px;
+}
+
+.karma-4col .num {
+	color: #F6F6F6;
+	font-family: 'Sora';
+	font-size: 55px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -1.628px;
+}
+
+.karma-4col .karma-text {
 	padding-bottom: 60px;
 }
+
 .text-gray {
 	color: #888888;
 }
 
 
 .title {
-  position: relative;
-  margin-top: 30px;
-  width: 100%;
-  text-align: center;
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	text-align: center;
 }
 
 .timeline {
-  position: relative;
-  width: 100%;
-  padding: 30px 0;
+	position: relative;
+	width: 100%;
+	padding: 30px 0;
 }
 
 .timeline .timeline-container {
-  position: relative;
-  width: 100%;
-} 
- 
+	position: relative;
+	width: 100%;
+}
+
 .timeline .timeline-continue {
-  position: relative;
-  width: 100%;
-  padding: 60px 0;
+	position: relative;
+	width: 100%;
+	padding: 60px 0;
 }
 
 .timeline .timeline-continue::after {
-  position: absolute;
-  content: "";
-  width: 5px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  margin-left: -1px;
-  background: #383838;
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+	background: #383838;
 }
 
 .timeline .row.timeline-left,
 .timeline .row.timeline-right .timeline-date {
-  text-align: right;
+	text-align: right;
 }
+
 .row.timeline-right .col-md-6 {
 	padding: 0 30px;
 }
+
 .news-p {
-	color: #EF5152; 
+	color: #EF5152;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 600;
@@ -818,15 +889,325 @@ letter-spacing: -3.2px;
 	align-items: center;
 	margin-top: 20px;
 }
+
 .news-sec .link-text img {
 	margin-left: 15px;
 	max-width: 24px;
 }
+
 /*===================== 12.ABOUT AREA END =====================*/
-/*===================== 12.MEDIA QUERIES START =====================*/
+/*===================== 13.CONTACT PROJECT AREA START =====================*/
+.brading-icons li {
+	display: inline-block;
+	border-radius: 50px;
+	background: #F2F2F2;
+	padding: 12px 16px;
+	margin: 0 10px 10px 0;
+}
+
+.brading-icons li.active {
+	display: inline-block;
+	border-radius: 50px;
+	background: #222222;
+	padding: 12px 16px;
+	margin: 0 10px 10px 0;
+} 
+.brading-icons li:hover {
+  display: inline-block;
+  border-radius: 50px;
+  background: #222222;
+  padding: 12px 16px;
+  margin: 0 10px 10px 0;
+  color: #fff;
+}
+.brading-icons li.active a,
+.brading-icons li:hover a {
+	color: #fff;
+}
+
+.brading-grp {
+	margin-bottom: 40px;
+}
+
+/*===================== 13.CONTACT PROJECT AREA END =====================*/
+
+/*===================== 14.CONTACT CAREER AREA START =====================*/
+.form-control-text {
+	border: 1px solid #999999 !important;
+	border: none;
+	height: 60px;
+	padding: 15px 20px;
+	min-height: 80px;
+	width: 100%;
+	color: #333333;
+	font-size: 15px;
+	font-weight: 400;
+	position: relative;
+	letter-spacing: 1px;
+	background-color: transparent;
+}
+
+.contact-btn-mar {
+	display: table;
+	margin-right: 20px;
+}
+
+.contact-address {
+	background-color: #eeeeee;
+	padding: 50px;
+	border-top: 5px solid #76448E;
+}
+
+.form-res label {
+	color: #222222;
+	padding-bottom: 10px;
+}
+
+.SuccessMsg,
+.sucessMessage {
+	color: #0fa80f;
+	font-size: 14px !important;
+	line-height: 24px !important;
+}
+
+.failMsg,
+.failMessage {
+	color: #ff0000;
+	font-size: 14px !important;
+	line-height: 24px !important;
+}
+
+.messageDiv {
+	padding-top: 10px;
+}
+
+.subs-error-top a {
+	color: #ffffff !important;
+}
+
+.subs-error-top {
+	color: #ff5656;
+	font-size: 14px !important;
+	line-height: 24px !important;
+	margin-top: 10px;
+}
+
+.form-control-text:-moz-placeholder,
+.form-input:-moz-placeholder {
+	/* Firefox 4 - 18 */
+	color: #dddddd;
+	opacity: 1;
+}
+
+.form-control-text::-webkit-input-placeholder,
+.form-input::-webkit-input-placeholder {
+	/* Chrome */
+	color: #dddddd;
+}
+
+.form-control-text:-ms-input-placeholder,
+.form-input:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #dddddd;
+}
+
+.form-control-text::-moz-placeholder,
+.form-input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #dddddd;
+	opacity: 1;
+}
+
+.form-control-text.errorClass:-moz-placeholder,
+.form-input.errorClass:-moz-placeholder {
+	/* Firefox 4 - 18 */
+	color: #dddddd;
+	opacity: 1;
+}
+
+.form-control-text.errorClass::-webkit-input-placeholder,
+.form-input.errorClass::-webkit-input-placeholder {
+	/* Chrome */
+	color: #ff0000;
+}
+
+.form-control-text.errorClass:-ms-input-placeholder,
+.form-input.errorClass:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #ff0000;
+}
+
+.form-control-text.errorClass::-moz-placeholder,
+.form-input.errorClass::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #ff0000;
+	opacity: 1;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border: 0px;
+}
+
+.form-control:focus {
+	box-shadow: none;
+	border: 0px;
+}
+
+.form-textarea-top-spacing {
+	padding-top: 50px;
+}
+
+.form-input {
+	border-bottom: 1px solid #dddddd !important;
+	height: 42px;
+	width: 100%;
+	padding: 0 10px;
+	min-height: 0px;
+	font-size: 15px;
+	border: none;
+	background-color: transparent;
+}
+
+/*===================== 14.CONTACT CAREER AREA END =====================*/
+/*===================== 15.SERVICES AREA START =====================*/
+.service-header {
+	background: url("../../images/services/header.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.service-2nd-sec-text-img {
+	position: absolute;
+	right: 150px;
+	top: 0;
+	width: 300px;
+	height: auto;
+	z-index: 0;
+}
+
+.services-price {
+	border-radius: 4px;
+	background: #1E1E1E;
+	padding: 30px;
+	box-shadow: 0px 2px 10px 0px rgba(34, 34, 34, 0.04);
+	color: #ffffff;
+}
+
+.services-price ul li {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 15px;
+}
+
+.ser-com img,
+.services-price ul li img {
+	margin-right: 15px;
+}
+
+.ser-com {
+	display: flex;
+	padding: 50px;
+	align-items: flex-start;
+	border-bottom: 1px solid #ccc;
+}
+
+.ser-com.br0 {
+	border: 0;
+}
+
+/*===================== 15.SERVICES AREA END =====================*/
+
+/*===================== 16.PROCESS AREA START =====================*/
+.process-header {
+	background: url("../../images/process/header.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.width-70 {
+	width: 70%;
+}
+
+/*===================== 16.PROCESS AREA END =====================*/
+
+/*===================== 17.CONTACT US AREA START =====================*/
+.contact-icon {
+	position: absolute;
+	z-index: 99999999;
+	left: 0;
+	right: 0;
+	display: table;
+	margin: 0 auto;
+	bottom: -80px;
+}
+
+.contact-head {
+	padding-bottom: 150px;
+}
+
+.contact-2head {
+	z-index: -1;
+	position: relative;
+	padding-top: 150px;
+}
+
+.faq2 .bg-faq-head span {
+	color: #dd496c;
+}
+
+.faq2 .bg-faq-head:after {
+	content: "\f106";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	right: 0;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.faq2 .faq-ques.active .bg-faq-head:after {
+	content: "\f107";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	right: 0;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.faq2 .bg-faq-head {
+	margin-bottom: 15px;
+	padding-right: 30px;
+	position: relative;
+	cursor: pointer;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
+.faq-accord.faq2 {
+	margin-bottom: 40px;
+}
+
+.faq-accord.faq2:last-child {
+	margin-bottom: 0;
+}
+
+/*===================== 17.CONTACT US AREA END =====================*/
+/*===================== 18.MEDIA QUERIES START =====================*/
 
 
 @media only screen and (max-width: 575px) {
+
 	.karma-font,
 	.subtitle,
 	h1 {
@@ -848,8 +1229,14 @@ letter-spacing: -3.2px;
 	h4 {
 		font-size: 25px;
 		line-height: 35px;
-	} 
-
+	}
+	
+	.service-header,
+	.process-header,
+	.about-header {
+		padding-top: 80px;
+		padding-bottom: 50px;
+	}
 
 	.res-row-margin-bottom {
 		margin-bottom: 30px;
@@ -873,17 +1260,27 @@ letter-spacing: -3.2px;
 	.primary-btn svg {
 		margin-left: 5px;
 	}
+
 	#logo-slider .owl-prev,
 	#logo-slider .owl-next {
 		margin-top: 0;
 		margin-bottom: 0;
-	} 
+	}
+
 	.timeline .timeline-continue::after {
 		left: 33%;
 	}
+
+	.faq2 .bg-faq-head {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	
+
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
 	.karma-font,
 	h1 {
 		font-size: 40px;
@@ -914,12 +1311,14 @@ letter-spacing: -3.2px;
 		font-size: 16px;
 		line-height: 26px;
 	}
+
 	.timeline .timeline-continue::after {
 		left: 33%;
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
 	.karma-font,
 	h1 {
 		font-size: 45px;
@@ -958,7 +1357,6 @@ letter-spacing: -3.2px;
 	.img-margin-bottom {
 		margin-bottom: 23px;
 	}
-
 	.section-space {
 		padding-bottom: 60px;
 		padding-top: 60px;
@@ -1010,7 +1408,7 @@ letter-spacing: -3.2px;
 
 	.section-margin-bottom {
 		margin-bottom: 10px;
-	} 
+	}
 
 	.img-margin-bottom {
 		margin-bottom: 10px;
@@ -1023,8 +1421,8 @@ letter-spacing: -3.2px;
 	}
 
 	.section-space {
-		padding-bottom: 70px;
-		padding-top: 70px;
+		padding-bottom: 50px;
+		padding-top: 50px;
 	}
 
 	body {
@@ -1034,39 +1432,57 @@ letter-spacing: -3.2px;
 	.res-margin-bottom {
 		margin-bottom: 40px;
 	}
+	.about-header,
+	.process-header,
+	.service-header {
+		background-image: none;
+	}
+	
+	.about-header {
+		margin-bottom: 0;
+	}
 	.desk-img {
 		display: none;
 	}
+
 	.mob-img {
 		display: block;
+		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
+
 	.res-text-center767 {
 		text-align: center;
 	}
+
 	.p0-767 {
 		padding: 0 !important;
 	}
-	.about-principles-section .exp-com:last-child {
+
+	.about-principles-section .exp-com.tab-mb0{
 		border: 0;
 		margin-bottom: 0;
 	}
-	.exp-head { 
+
+	/* .exp-head {
 		margin-bottom: 10px;
 		padding-bottom: 10px;
-	}
+		border: 0;
+	} */
+
 	.about-principles-section .exp-com {
 		border-bottom: 1px solid #ccc;
 		padding-bottom: 40px;
 	}
-	
+
 	.timeline .timeline-continue {
-	padding: 30px 0;
+		padding: 30px 0;
 	}
+
 	.news-sec .link-text {
 		margin-top: 15px;
-	}	
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -1122,14 +1538,30 @@ letter-spacing: -3.2px;
 	.res-width-padding-bottom {
 		padding-bottom: 30px;
 	}
+	
+	.tab-pt30{
+		padding-top: 30px;
+	}
+	
+	.tab-pt50{
+		padding-top: 50px;
+	}
+	
+	.tab-pb30{
+		padding-bottom: 30px;
+	}
+	
+	.tab-pb50{
+		padding-bottom: 50px;
+	}
+
+	.ser-com {
+		padding: 40px 20px;
+	}
 
 	.craft-com,
 	.exp-com {
-		padding: 20px 10px;
-	}
-	
-	.exp-com {
-		margin-bottom: 30px;
+		padding: 40px 10px;
 	}
 
 	#testimonial-slider.owl-theme .owl-controls .owl-buttons,
@@ -1178,97 +1610,153 @@ letter-spacing: -3.2px;
 	.footer-icon {
 		top: 0;
 	}
+
 	.about-sec2 br,
 	.exp-head h5 br,
 	.tab-hidebr br {
 		display: none;
-	}	
-	
+	}
+
 	.tab-mt0 {
 		margin-top: 0;
 	}
-	
-	.tab-border0{
+
+	.width-70 {
+		width: 100%;
+	}
+
+	.tab-border0 {
 		border: 0 !important;
 	}
-	
-	.tab-border-bottom0{
+
+	.tab-border-bottom0 {
 		border-bottom: 0 !important;
 	}
-	
+
 	.tab-mb0 {
 		margin-bottom: 0 !important;
 	}
-	
+
 	.tab-border-top {
 		border-top: 1px solid #cccccc;
 		padding-top: 50px !important;
 	}
-	.tab-border{
+
+	.tab-border {
 		border-bottom: 1px solid #cccccc;
 		margin-bottom: 20px;
 	}
-	.tab-border > .rowsafari {
+
+	.tab-border>.rowsafari {
 		margin-bottom: 20px;
 	}
+
 	.testimonial-slider-box span {
 		font-size: 50px;
 		line-height: 50px;
 	}
+
 	.res-margin-4 {
 		padding-top: 40px;
 	}
+
 	.res-text-center {
 		text-align: center;
 	}
+
+	.services-left {
+		margin-top: 0 !important;
+		padding-bottom: 10px;
+	}
+	
+	.services-price {
+		padding: 30px 15px;
+	}
+
 	.tab-pad-bot-120 {
 		padding-bottom: 120px;
 	}
+
 	.footer h5 {
 		font-size: 22px;
 		line-height: 32px;
 	}
-	
+
 	.client-section-padding-bottom {
 		padding-bottom: 0;
 	}
+
 	.social-grp {
 		text-align: center;
 	}
+
 	.res-pad-left15 {
 		padding-left: 15px !important;
 	}
+
 	.ul-img {
 		display: none;
 	}
-		
+
 	.about-sec-com .about-sec2:first-child {
 		padding-bottom: 30px;
 	}
+
 	.karma-font span {
 		padding-left: 90px !important;
 	}
+
 	.karma-4col {
 		padding-top: 20px !important;
 	}
+
 	.karma-4col:first-child {
 		border-top: 1px solid #383838;
 	}
+
 	.karma-content {
 		padding-top: 20px !important;
 		padding-left: 0 !important;
 		border-top: 1px solid #383838;
 	}
+
 	.about-karma-2col-text {
-		padding: 20px !important; 
+		padding: 20px !important;
 		border-top: 1px solid #383838;
 	}
+
 	.karma-content .text-light {
 		padding-bottom: 50px !important;
 	}
-	
-	.client-logos > .col-lg-3{
-		text-align: center;
+
+	.contact-projects-3col {
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	.contact-projects-3col .cpf-com {
+		width: 32.33%;
+		padding: 0 10px;
+	}
+
+	.contact-projects-3col .cpf-com h6 {
+		font-size: 13px;
+		line-height: 23px;
+	}
+
+	.contact-projects-3col .cpf-com:nth-child(2) {
+		width: 42.33%;
+		padding: 0 10px;
+	}
+
+	.service-2nd-sec-text-img {
+		display: none;
+	}
+
+	.contact-icon {
+		bottom: -35px;
+		width: 150px;
 	}
 }
 
@@ -1321,15 +1809,15 @@ letter-spacing: -3.2px;
 		width: 1.2em;
 		height: 1.2em;
 	}
-	
-	.exp-head h5 br{
+
+	.exp-head h5 br {
 		display: initial;
 	}
-	
+
 	.exp-com .exp-head img {
 		width: 30px;
 	}
-	
+
 	.primary-btn {
 		width: 100%;
 	}
@@ -1368,7 +1856,7 @@ letter-spacing: -3.2px;
 		margin-right: 15px;
 		display: initial;
 	}
-	
+
 }
 
 /* SAFARI MENU ISSUES*/
@@ -1388,20 +1876,28 @@ letter-spacing: -3.2px;
 	}
 }
 
-@media only screen and (max-width: 1199px) { 
+@media only screen and (max-width: 1199px) {
 	.ul-img {
 		display: none;
 	}
 }
+
 @media only screen and (min-width: 1199px) {
 	#logo-slider.owl-carousel .owl-item {
 		width: 331px !important;
-	} 
-}
-@media only screen and (min-width: 1440px) and (max-width: 1920px) { 
-.ul-img {
-		margin-left: -160px !important;
-  margin-top: 23px;
 	}
 }
-/*=================================== 12.MEDIA QUERIES END =======================================*/
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+	.ul-img {
+		margin-left: -160px !important;
+		margin-top: 23px;
+	}
+	.service-header,
+	.about-header {
+		padding-top: 200px;
+  		padding-bottom: 200px;
+	}
+}
+
+/*=================================== 18.MEDIA QUERIES END =======================================*/
