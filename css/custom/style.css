@@ -396,7 +396,7 @@ h6 {
 /*========================= 4.NAVIGATION START ===================================*/
 
 .nav-style {
-	color: #222;
+	color: #222 !important;
 	font-family: Sora;
 	font-size: 14px;
 	font-style: normal;
@@ -740,11 +740,19 @@ button:focus:not(:focus-visible) {
 	align-items: center;
 }
 .social-icons li {
+	color: #222;
+	text-align: center;
+	font-family: Sora;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.56px;
 	display: inline-block;
-	border: 1px solid #cccccc;
-	padding: 5px 15px;
-	border-radius: 50px;
+	border: 1px solid #CDCDCD;
+	padding: 5px 15px; 
 	margin: 0 2px 8px 0;
+	border-radius: 32px;
 }
 
 .social-grp {
@@ -1203,7 +1211,15 @@ button:focus:not(:focus-visible) {
 .faq-accord.faq2:last-child {
 	margin-bottom: 0;
 }
-
+.works-content .client-head p {
+	color: #151515;
+	font-family: Sora;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.32px;
+}
 /*===================== 17.CONTACT US AREA END =====================*/
 /*===================== 18.MEDIA QUERIES START =====================*/
 
@@ -1428,7 +1444,7 @@ button:focus:not(:focus-visible) {
 	}
 
 	body {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	.res-margin-bottom {
@@ -1484,6 +1500,109 @@ button:focus:not(:focus-visible) {
 
 	.news-sec .link-text {
 		margin-top: 15px;
+	}
+	.work-header {
+		text-align: center;
+	}
+	.work-header h2 {
+		color: #222;
+		text-align: center; 
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 54px; /* 135% */
+		letter-spacing: -1.2px;
+	}
+	.work-header p {
+		color: #555;
+		text-align: center;
+		font-family: Sora;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px; /* 150% */
+		letter-spacing: -0.48px;
+	}
+	.works-content h6 {
+		color: #555;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 26px; /* 162.5% */
+		letter-spacing: -0.64px;
+	}
+	.works-content p {
+		color: #555;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px; /* 171.429% */
+		letter-spacing: -0.56px;
+	}
+	.works-content h4 {
+		color: #222;
+		font-family: Sora;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -0.8px;
+	}
+	.cta-section h3 {
+		color: #FFF !important;
+		text-align: center;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 600 !important;
+		line-height: normal;
+		letter-spacing: -0.8px;
+	}
+	.cta-section p {
+		color: #EAEAEA !important;
+		text-align: center;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.4px;
+	}
+	.cta-section .primary-btn {
+		color: #FFF;
+		text-align: center;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -0.64px;
+		padding: 20px 48px;
+	}
+	.footer p {
+		color: #222;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.56px;
+	}
+	.footer h5 {
+		color: #222;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.96px;
+	}
+	.footer .primary-btn {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		border-radius: 46px;
+		letter-spacing: -0.56px;
+		padding: 20px 48px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
 	}
 }
 
@@ -1677,11 +1796,6 @@ button:focus:not(:focus-visible) {
 
 	.tab-pad-bot-120 {
 		padding-bottom: 120px;
-	}
-
-	.footer h5 {
-		font-size: 22px;
-		line-height: 32px;
 	}
 
 	.client-section-padding-bottom {
@@ -1893,8 +2007,121 @@ button:focus:not(:focus-visible) {
 		width: 331px !important;
 	}
 }
-
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1439px) and (max-width: 1919px){
+	.work-header .col-lg-8 {
+		width: 100%;
+	}
+	.work-header h2 {
+		color: #000;
+		font-size: 72px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -2.16px;
+	}
+	.work-header p {
+		color: #000;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 38px; /* 158.333% */
+		letter-spacing: -0.72px;
+	}
+	
+	.works-content h6 {
+		color: #555;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 26px; /* 162.5% */
+		letter-spacing: -0.64px;
+	}
+	.works-content .col-lg-3 p {
+		color: #555;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px; /* 171.429% */
+		letter-spacing: -0.56px;
+	}
+	.works-content h4 {
+		color: #222;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -1.6px;
+	}
+	.works-content p {
+		color: #555;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 26px; /* 162.5% */
+		letter-spacing: -0.64px;
+	}
+	.cta-section h3 {
+		color: #FFF  !important;
+		text-align: center;
+		font-size: 64px;
+		font-style: normal;
+		font-weight: 600 !important;
+		line-height: normal;
+		letter-spacing: -1.28px;
+	}
+	.cta-section p.intro-content {
+		color: #EAEAEA !important;
+		text-align: center;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.64px;
+	}
+	.cta-section .primary-btn {
+		display: inline-flex;
+		padding: 24px 48px;
+		align-items: flex-start;
+		gap: 10px;
+		border-radius: 46px;
+		background: #EF5152;
+		color: #FFF;
+		text-align: center; 
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -0.64px;
+	}
+	.social-icons li {
+		border-radius: 32px;
+		border: 1px solid #222;
+	}
+	.footer p {
+		color: #222; 
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.64px;
+	}
+	.footer h5 {
+		color: #222;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -1.28px;
+	}
+	.footer .primary-btn {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.56px;
+	}
+}
+@media only screen and (min-width: 1920px) {
 	.ul-img {
 		margin-left: -160px !important;
 		margin-top: 23px;
@@ -1982,7 +2209,7 @@ button:focus:not(:focus-visible) {
 		letter-spacing: -1.28px;
 	}
 	.cta-section .intro-content {
-		color: #EAEAEA;
+		color: #EAEAEA !important;
 		font-size: 32px;
 		font-style: normal;
 		font-weight: 400;
@@ -1992,8 +2219,14 @@ button:focus:not(:focus-visible) {
 	.social-icons li {
 		border-radius: 32px;
 		border: 1px solid #222;
-		font-size: 16px;
-    	line-height: 26px;
+		color: #222;
+		text-align: center;
+		font-family: Sora;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.56px;
 	}
 	.news-p {
 		font-size: 20px;
@@ -2026,6 +2259,37 @@ button:focus:not(:focus-visible) {
 		font-weight: 600;
 		line-height: normal;
 		letter-spacing: -1.6px;
+		text-align: left;
+	}
+	.works-content h6 {
+		color: #555;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 26px; /* 162.5% */
+		letter-spacing: -0.64px;
+		text-align: left;
+	}
+	.works-content .col-lg-3 p {
+		color: #555; 
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px; /* 171.429% */
+		letter-spacing: -0.56px;
+		text-align: left;
+	}
+	.works-content p {
+		color: #555; 
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 26px; /* 162.5% */
+		letter-spacing: -0.64px;
+		text-align: left;
+	}
+	.craft-com {
+		text-align: center;
 	}
 	.contact-us-3rd .intro-content {
 		font-size: 24px;
@@ -2057,6 +2321,29 @@ button:focus:not(:focus-visible) {
 	} 
 	.container, .container-lg, .container-md, .container-sm, .container-xl {
 	  max-width: 1600px;
+	}
+	.footer p {
+		color: #222; 
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.64px;
+	}
+	.footer h5 {
+		color: #222;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -1.6px;
+	}
+	.footer .primary-btn { 
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		letter-spacing: -0.56px;
 	}
   }
 /*=================================== 18.MEDIA QUERIES END =======================================*/
