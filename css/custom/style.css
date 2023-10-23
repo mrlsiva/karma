@@ -171,6 +171,11 @@ h6 {
 	opacity: 0;
 }
 
+.fs14 {
+	font-size: 14px;
+	line-height: 25px;
+}
+
 /*========================== 1.GLOBAL CSS END =====================*/
 
 /*========================= 2.COMMON CSS START =============================*/
@@ -212,7 +217,7 @@ h6 {
 	background-color: #151515;
 }
 
-.intro-content {
+/* .intro-content {
 	color: #424242;
 	font-family: 'Sora';
 	font-size: 19px;
@@ -220,6 +225,16 @@ h6 {
 	font-weight: 400;
 	line-height: 29px;
 	letter-spacing: 1.5px;
+} */
+
+.spl-intro-content {
+	color: #424242;
+	font-family: 'Sora';
+	font-size: 44px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: -0.64px;
 }
 
 .section-heading {
@@ -252,6 +267,10 @@ h6 {
 
 .pb-50 {
 	padding-bottom: 50px;
+}
+
+.pt-40 {
+	padding-top: 40px;
 }
 
 /*======================== 2.COMMON CSS END ================================*/
@@ -1229,8 +1248,8 @@ button:focus:not(:focus-visible) {
 	.karma-font,
 	.subtitle,
 	h1 {
-		font-size: 51px;
-		line-height: 57px;
+		font-size: 48px;
+		line-height: 54px;
 		letter-spacing: -1px;
 	}
 
@@ -1501,10 +1520,25 @@ button:focus:not(:focus-visible) {
 	.news-sec .link-text {
 		margin-top: 15px;
 	}
+	.heading3 { 
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -1.2px;
+	} 
+	.exp-head .heading5,
+	.heading5{
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
 	.work-header {
 		text-align: center;
 	}
-	.work-header h2 {
+	.work-header h2,
+	.heading2	{
 		color: #222;
 		text-align: center; 
 		font-size: 40px;
@@ -1539,7 +1573,8 @@ button:focus:not(:focus-visible) {
 		line-height: 24px; /* 171.429% */
 		letter-spacing: -0.56px;
 	}
-	.works-content h4 {
+	.works-content h4,
+	.heading4 {
 		color: #222;
 		font-family: Sora;
 		font-size: 20px;
@@ -1603,6 +1638,15 @@ button:focus:not(:focus-visible) {
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
+	}
+	.intro-content,
+	.spl-intro-content	{		
+		font-size: 28px;		
+		line-height: 38px;		
+	}
+	
+	.mobile-hide{
+		display: none;
 	}
 }
 
@@ -1994,6 +2038,14 @@ button:focus:not(:focus-visible) {
 		display: inline-block !important;
 		vertical-align: middle !important;
 	}
+	
+	.works-col .craft-com{
+		padding-bottom: 100px;
+	}
+	
+	.home-works-col .craft-com{
+		padding-bottom: 70px;
+	}
 }
 
 @media only screen and (max-width: 1199px) {
@@ -2006,18 +2058,43 @@ button:focus:not(:focus-visible) {
 	#logo-slider.owl-carousel .owl-item {
 		width: 331px !important;
 	}
+	
+	.works-col .craft-com img{
+		max-width: 930px;
+	}	
+	
 }
 @media only screen and (min-width: 1439px) and (max-width: 1919px){
 	.work-header .col-lg-8 {
 		width: 100%;
 	}
-	.work-header h2 {
+	.heading1 {
+		font-size: 96px;
+		font-weight: 700;
+		letter-spacing: -3.84px;
+	}
+	.work-header h2,
+	.heading2 {
 		color: #000;
 		font-size: 72px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 		letter-spacing: -2.16px;
+	}
+	.heading3 { 
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: -1.92px;
+	} 
+	.karma-4col .num {		
+		font-size: 80px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -1.628px;
 	}
 	.work-header p {
 		color: #000;
@@ -2044,13 +2121,21 @@ button:focus:not(:focus-visible) {
 		line-height: 24px; /* 171.429% */
 		letter-spacing: -0.56px;
 	}
-	.works-content h4 {
+	.works-content h4,
+	.heading4 {
 		color: #222;
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 		letter-spacing: -1.6px;
+	}
+	.exp-head .heading5,
+	.heading5{
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
 	}
 	.works-content p {
 		color: #555;
@@ -2135,7 +2220,8 @@ button:focus:not(:focus-visible) {
 		width: 185px;
  		height: 45px;
 	}
-	h1 {
+	h1,
+	.heading1 {
 		font-size: 96px;
 		font-weight: 700;
 		letter-spacing: -3.84px;
@@ -2166,7 +2252,8 @@ button:focus:not(:focus-visible) {
 	#logo-slider.owl-carousel .owl-item {
 		width: 400px !important;
 	}
-	.exp-head h5 { 
+	.exp-head h5,
+	.heading3 { 
 		font-size: 48px;
 		font-style: normal;
 		font-weight: 700;
@@ -2246,20 +2333,29 @@ button:focus:not(:focus-visible) {
 		line-height: normal;
 		letter-spacing: -1.12px;
 	}
-	.work-header h2 {
+	.work-header h2,
+	.heading2	{
 		font-size: 72px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 		letter-spacing: -2.16px;
 	}
-	.works-content h4 {
+	.works-content h4,
+	.heading4 {
 		font-size: 40px;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 		letter-spacing: -1.6px;
 		text-align: left;
+	}
+	.exp-head .heading5,
+	.heading5{
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
 	}
 	.works-content h6 {
 		color: #555;
@@ -2287,6 +2383,13 @@ button:focus:not(:focus-visible) {
 		line-height: 26px; /* 162.5% */
 		letter-spacing: -0.64px;
 		text-align: left;
+	}
+	.karma-4col .num {		
+		font-size: 80px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		letter-spacing: -1.628px;
 	}
 	.craft-com {
 		text-align: center;
