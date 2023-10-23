@@ -54,9 +54,9 @@ body {
 	background: #ffffff;
 	color: #333333;
 	font-family: 'Sora', sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 25px;
+	font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
 	margin: 0 auto;
 	max-width: 100%;
 }
@@ -67,6 +67,7 @@ body .container-fluid {
 p {
 	margin-bottom: 0px;
 	color: #333333;
+	letter-spacing: -1px;
 }
 
 h1 {
@@ -778,10 +779,14 @@ button:focus:not(:focus-visible) {
 	padding-bottom: 50px;
 }
 
+.footer-last{
+	position: relative;
+}
+
 .footer-icon {
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 0;
 	width: 100px;
 	height: 100px;
 	margin: -60px 0 0 -60px;
@@ -1774,6 +1779,7 @@ button:focus:not(:focus-visible) {
 
 	.footer-icon {
 		top: 0;
+		left: 50%;
 	}
 
 	.about-sec2 br,
