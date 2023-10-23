@@ -1186,7 +1186,7 @@ button:focus:not(:focus-visible) {
 
 .contact-2head {
 	z-index: -1;
-	position: relative;
+	/* position: relative; */
 	padding-top: 150px;
 }
 
