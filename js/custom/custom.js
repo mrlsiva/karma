@@ -179,7 +179,7 @@ $(document).ready(function () {
                     $.ajax({
                         type: "POST",
 						dataType: "json",
-                        url: "mail/mail.php",
+                        url: "mail/sendmail-karma.php",
                         data: $(form).serialize(),
 						success: function(data) {
 							//console.log(' data > ', data);							
