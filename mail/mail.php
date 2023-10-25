@@ -21,7 +21,7 @@ if( isset($_POST['name']) && isset($_POST['email']) ) {
 		//Important - UPDATE YOUR RECEIVER EMAIL ID, NAME AND SUBJECT
 		
 		// Please enter your email ID 	
-		$to_email = 'hello@creativekarmas.com';
+		$to_email = 'pmrlsivas@gmail.com';
 		// Please enter your name		
 		$to_name = "Creative Karma";
 		// Please enter your Subject
