@@ -41,6 +41,28 @@ $(document).ready(function () {
 		$(this).parents('.owl-next-add').removeClass('next-cls');
 	});
 	
+	function initClickToTop($this) {
+		if ($this.scrollTop() >= 50) {
+			$('#return-to-top').fadeIn(200);
+		} else {
+			$('#return-to-top').fadeOut(200);
+		}
+	}	
+	// SCROLL TOP 
+	$(window).scroll(function () {
+		var $this = $(this);
+		initClickToTop($this);
+	});
+	$(window).load(function () {
+		var $this = $(this);
+		initClickToTop($this);
+	});
+	
+	$('#return-to-top').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+	}); 
 	
 	//ANIMATION
 	$.fn.isOutViewport = function() {
@@ -119,32 +141,69 @@ $(document).ready(function () {
 	}
  
 	var accord = $(".faq-accord");
-    	if(accord.length){
-    	  var i = 0; 
-    	  accord.each(function(){
-           var all_panels = $(this).find('.faq-ans').hide();  
-          
-    		var all_titles = $(this).find('.faq-ques'); 
-    		
-    		$(this).find('.faq-ans.active').slideDown();    	
-    		
-          all_titles.on("click", function() { 
-            
-            var acc_title = $(this);
-            var acc_parent = $(this).parents('.faq-container');
-            var acc_ans = acc_title.next(); 
-            
-              if (!acc_ans.hasClass('active')) {
-                    acc_parent.find('.faq-ques').removeClass('active');  
-                    acc_parent.find('.faq-ans').removeClass('active').slideUp();
-                    
-                    acc_title.addClass('active');  
-                    acc_ans.addClass('active').slideDown(); 
-                  } else {
-                     all_panels.removeClass('active').slideUp();
-                     all_titles.removeClass('active'); 
-                  } 
-          });
-    	  });        
-    	}
+	if(accord.length){
+	  var i = 0; 
+	  accord.each(function(){
+	   var all_panels = $(this).find('.faq-ans').hide();  
+	  
+		var all_titles = $(this).find('.faq-ques'); 
+		
+		$(this).find('.faq-ans.active').slideDown();    	
+		
+	  all_titles.on("click", function() { 
+		
+		var acc_title = $(this);
+		var acc_parent = $(this).parents('.faq-container');
+		var acc_ans = acc_title.next(); 
+		
+		  if (!acc_ans.hasClass('active')) {
+				acc_parent.find('.faq-ques').removeClass('active');  
+				acc_parent.find('.faq-ans').removeClass('active').slideUp();
+				
+				acc_title.addClass('active');  
+				acc_ans.addClass('active').slideDown(); 
+			  } else {
+				 all_panels.removeClass('active').slideUp();
+				 all_titles.removeClass('active'); 
+			  } 
+	  });
+	  });        
+	}
+	
+	//CONTACT FORM VALIDATION	
+	if ($('.form-res').length) {
+        $('.form-res').each(function() {
+            $(this).validate({
+                errorClass: 'error',
+                submitHandler: function(form) {
+                    $.ajax({
+                        type: "POST",
+						dataType: "json",
+                        url: "mail/mail.php",
+                        data: $(form).serialize(),
+						success: function(data) {
+							//console.log(' data > ', data);							
+                            if (data.success) {
+                                $(form)[0].reset();
+                                $(form).find('.sucessMessage').html(data.message);
+                                $(form).find('.sucessMessage').show();
+                                $(form).find('.sucessMessage').delay(5000).fadeOut();
+                            } else {
+                                $(form).find('.failMessage').html(data.message);
+                                $(form).find('.failMessage').show();
+                                $(form).find('.failMessage').delay(5000).fadeOut();
+                            }
+                        },
+                        error: function(XMLHttpRequest, textStatus, errorThrown) {
+                            $(form).find('.failMessage').html(textStatus + '  '+ errorThrown );
+                            $(form).find('.failMessage').show();
+                            $(form).find('.failMessage').delay(5000).fadeOut();
+                        }
+						
+                    });
+                }
+            });
+        });
+    }
+	
 });
